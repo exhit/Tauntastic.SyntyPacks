@@ -1,0 +1,19 @@
+{
+    "name": "Tauntastic.SyntyPacks.Editor",
+    "rootNamespace": "Tauntastic.SyntyPacks.Editor",
+    "references": [
+        "Tauntastic.WebBrowser",
+        "Tauntastic.WebBrowser.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

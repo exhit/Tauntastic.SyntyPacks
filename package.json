@@ -1,0 +1,28 @@
+{
+  "name": "com.tauntastic.syntypacks",
+  "version": "1.0.0",
+  "displayName": "Tauntastic.SyntyPacks",
+  "description": "Lists the Synty Studios asset packs from the Synty store, shows which ones are imported in the project, owned in the Unity Asset Store or the Synty store, tells you when a newer Unity version of an imported pack is published, and downloads and imports the packs you own",
+  "unity": "2023.2",
+  "author": {
+    "name": "Taunting",
+    "email": "tauntastic.unitydeveloper@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "com.tauntastic.webbrowser": "https://github.com/exhit/Tauntastic.Webbrowser.git"
+  },
+  "keywords": [
+    "unity",
+    "editor",
+    "synty",
+    "polygon",
+    "asset store",
+    "package manager",
+    "update"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exhit/Tauntastic.SyntyPacks.git"
+  }
+}

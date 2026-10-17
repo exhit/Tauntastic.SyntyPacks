@@ -530,11 +530,25 @@ namespace Tauntastic.SyntyPacks.Editor
             {
                 foreach (MethodInfo method in type.GetMethods(_ALL | BindingFlags.DeclaredOnly))
                 {
-                    if (method.Name == name && method.GetParameters().Length == arguments.Length)
+                    if (method.Name == name && Accepts(method.GetParameters(), arguments))
                         return method.Invoke(target, arguments);
                 }
             }
             throw new MissingMethodException(target.GetType().Name, name);
+        }
+
+        /// <summary>True when every argument can be passed to its parameter. Overloads with the same argument count (Download(long) and Download(List<long>)) are told apart by their types.</summary>
+        private static bool Accepts(ParameterInfo[] parameters, object[] arguments)
+        {
+            if (parameters.Length != arguments.Length)
+                return false;
+            for (int i = 0; i < parameters.Length; i++)
+            {
+                Type type = parameters[i].ParameterType;
+                if (arguments[i] == null ? type.IsValueType : !type.IsInstanceOfType(arguments[i]))
+                    return false;
+            }
+            return true;
         }
 
         private static string Describe(Exception exception)

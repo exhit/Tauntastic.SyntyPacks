@@ -1,4 +1,3 @@
-#if UNITY_EDITOR
 // Generated from ARTIFICIAL_INTELLIGENCE_README.md of com.tauntastic.syntypacks.
 // Keeps the paragraph below in sync with Assets/ARTIFICIAL_INTELLIGENCE_README.md so AI agents can read how to use this package.
 namespace Tauntastic.AIReadme
@@ -73,4 +72,3 @@ namespace Tauntastic.AIReadme
         }
     }
 }
-#endif

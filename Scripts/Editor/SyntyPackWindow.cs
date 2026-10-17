@@ -377,7 +377,7 @@ namespace Tauntastic.SyntyPacks.Editor
             }
 
             _scroll = EditorGUILayout.BeginScrollView(_scroll);
-            foreach (Row row in _rows)
+            foreach (Row row in _rows.ToArray()) // a button in a row can rebuild the list while it is drawn
             {
                 if (!Matches(row))
                     continue;

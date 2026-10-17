@@ -2,7 +2,7 @@
 
 Lists the Synty Studios asset packs, shows which ones are in your project, and flags packs whose Unity version was bumped after you imported them.
 
-- Package: `com.tauntastic.syntypacks` (v1.0.0, Unity 2023.2+)
+- Package: `com.tauntastic.syntypacks` (v1.1.0, Unity 2023.2+)
 - Assembly / namespace: `Tauntastic.SyntyPacks.Editor` (Editor-only)
 - Dependencies: `com.tauntastic.webbrowser` (the browser tab used for the Synty store sign-in, library import and downloads)
 - Window: **Tools > Tauntastic > Synty Packs**; preferences: **Preferences > Tools > Tauntastic > Synty Packs**
